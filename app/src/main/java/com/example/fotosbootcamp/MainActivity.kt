@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity() {
         requestCode: Int,
         permissions: Array<out String>,
         grantResults: IntArray) {
-        when(requestCode) {
+        when(requestCode){
             PERMISSION_CODE_IMAGE_PICK -> {
                 if (grantResults.size > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
                     pickImageFromGalery()
